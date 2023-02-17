@@ -1,0 +1,132 @@
+{% load static %}
+<!-- Profile Modal -->
+<div class="modal fade" id="modify-profile" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-light p-3">
+                <h5 class="modal-title" id="">Profile Information</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="close-modal"></button>
+            </div>
+
+            <div class="card-body p-4">
+                <div class="text-center">
+                    <div class="profile-user position-relative d-inline-block mx-auto  mb-4">
+                        <img src="../assets/images/users/avatar-1.jpg" class="rounded-circle avatar-xl img-thumbnail user-profile-image" alt="user-profile-image">
+                        <div class="avatar-xs p-0 rounded-circle profile-photo-edit">
+                            <input id="profile-img-file-input" type="file" class="profile-img-file-input">
+                            <label for="profile-img-file-input" class="profile-photo-edit avatar-xs">
+                                <span class="avatar-title rounded-circle bg-light text-body">
+                                    <i class="ri-camera-fill"></i>
+                                </span>
+                            </label>
+                        </div>  
+                    </div>
+                    <h5 class="fs-16 mb-1">Anna Adame</h5>
+                    <p class="text-muted mb-0">Member</p>
+                </div>
+            </div>
+            <form id="add-event-form" class="needs-validation" novalidate="" enctype="multipart/form-data">
+                <div class="modal-body">
+                
+                    <h6 class="modal-title" id="">Personal Details</h6><br>
+                    <div class="row g-3">
+                        <div class="col-sm-4">
+                            <label for="first_name" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name" required="">
+                            <div class="invalid-feedback">
+                                Please provide a First Name.
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="middle_name" class="form-label">Middle Name</label>
+                                <input type="text" class="form-control" id="middle_name" name="middle_name" placeholder="Middle Name" >
+                            <div class="invalid-feedback">
+                                Please provide a Middle Name.
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="last_name" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name" required="">
+                            <div class="invalid-feedback">
+                                Please provide a Last Name.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row g-2">
+                        <div class="mb-3 col-md-6">
+                            <label for="last_name" class="form-label">Birthday</label>
+                            <input type="text" class="form-control" id="birthday" name="birthday" placeholder=Birthday" required="">
+                            <div class="invalid-feedback">
+                                Please provide a Birthday.
+                            </div>
+                        </div>
+                        <div class="mb-3 col-md-6">
+                            <label for="contact" class="form-label">Contact Number</label>
+                                <input type="tel" class="form-control" id="contact" name="contact" placeholder="+(639) 000 0000" required="">
+                            <div class="invalid-feedback">
+                                Please provide a Contact Number.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row g-2">
+                        <div class="mb-3 col-md-6">
+                            <label for="address" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="address" name="address" placeholder="Address">
+                            <div class="invalid-feedback">
+                                Please provide an Address.
+                            </div>
+                        </div>
+                        <div class="mb-3 col-md-6">
+                            <label for="agency" class="form-label">Agency/Company Affiliated</label>
+                                <input type="text" class="form-control" id="agency" name="agency" placeholder="Agency/Company Affiliated">
+                            <div class="invalid-feedback">
+                                Please provide an Agency/Company Affiliated.
+                            </div>
+                        </div>
+                    </div>
+                    <h6 class="modal-title" id="">Educational Attainment</h6><br>
+                    <div class="row g-2">
+                        <div class="mb-3 col-md-6">
+                            <label for="college" class="form-label">College</label>
+                                <input type="text" class="form-control" id="college" name="college" placeholder="College">
+                            <div class="invalid-feedback">
+                                Please provide a College.
+                            </div>
+                        </div>
+                        <div class="mb-3 col-md-6">
+                            <label for="post_grad" class="form-label">Post Graduate</label>
+                                <input type="text" class="form-control" id="post_grad" name="post_grad" placeholder="Post Graduate">
+                            <div class="invalid-feedback">
+                                Please provide a Post Graduate.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row g-2">
+                        <div class="mb-3 col-md-6">
+                            <label for="seminars" class="form-label">Relevant Trainings/Seminars Attended</label>
+                                <input type="text" class="form-control" id="seminars" name="seminars" placeholder="Relevant Trainings/Seminars Attended">
+                            <div class="invalid-feedback">
+                                Please provide an Relevant Trainings/Seminars Attended.
+                            </div>
+                        </div>
+                        <div class="mb-3 col-md-6">
+                            <label for="eligibility" class="form-label">Eligibility/Examination</label>
+                                <input type="text" class="form-control" id="eligibility" name="eligibility" placeholder="Eligibility/Examination">
+                            <div class="invalid-feedback">
+                                Please provide an Eligibility/Examination.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="hstack gap-2 justify-content-end">
+                        <button class="btn btn-primary" type="submit">Submit form</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
